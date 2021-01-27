@@ -26,5 +26,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countDownView" />
 
+    <Button
+        android:id="@+id/timer30Button"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/timer30Text"
+        app:layout_constraintBottom_toTopOf="@+id/timer90Button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/timer60Button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/timer60Text"
+        app:layout_constraintBottom_toTopOf="@+id/timer120Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toEndOf="@+id/timer30Button" />
+
+    <Button
+        android:id="@+id/timer90Button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/timer90Text"
+        app:layout_constraintBottom_toTopOf="@+id/startCountdownButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/timer120Button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/timer120Text"
+        app:layout_constraintBottom_toTopOf="@+id/startCountdownButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer30Button"
+        app:layout_constraintVertical_bias="0.571" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

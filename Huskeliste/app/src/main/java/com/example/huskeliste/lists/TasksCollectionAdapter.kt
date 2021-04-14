@@ -10,7 +10,6 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.task_layout.view.*
 import com.example.huskeliste.lists.data.Tasks
 import com.example.huskeliste.databinding.TaskLayoutBinding
-import kotlinx.android.synthetic.main.tasks_in_list_layout.view.*
 
 var progressTasks: Int = 0
 

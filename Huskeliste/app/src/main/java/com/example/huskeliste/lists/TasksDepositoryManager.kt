@@ -10,12 +10,6 @@ class TasksDepositoryManager {
 
     var onTasks: ((List<Tasks>) -> Unit)? = null
 
-    fun deleteDoneTasks() {
-        tasksCollection.removeAll { tasksCollection ->
-            tasksCollection.statCheckBox
-        }
-        onTasks?.invoke(tasksCollection)
-    }
     fun deleteTask(task: Tasks) {
         tasksCollection.remove(task)
         onTasks?.invoke(tasksCollection)

@@ -6,4 +6,9 @@
     <string name="timer60Text">60 Minutes</string>
     <string name="timer90Text">90 Minutes</string>
     <string name="timer120Text">120 Minutes</string>
+    <string name="timerBarText">Select Work Time</string>
+    <string name="pauseBarText">Select Pause Time</string>
+    <string name="repititionText">Enter number of repititions</string>
+
+
 </resources>

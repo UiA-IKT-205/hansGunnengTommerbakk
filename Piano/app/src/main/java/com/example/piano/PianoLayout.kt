@@ -1,5 +1,6 @@
 package com.example.piano
 
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -11,6 +12,7 @@ import com.example.piano.data.Note
 import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.net.toUri
 import com.example.piano.databinding.FragmentPianoLayoutBinding
 import kotlinx.android.synthetic.main.fragment_piano_layout.view.*
 import java.io.File
@@ -20,6 +22,8 @@ import java.time.format.DateTimeFormatter
 
 
 class PianoLayout : Fragment() {
+
+    var onSave:((file: Uri) -> Unit)? = null
 
     private var _binding:FragmentPianoLayoutBinding? = null
     private val binding get() = _binding!!
@@ -123,6 +127,7 @@ class PianoLayout : Fragment() {
                             writer.write("${it.toString()}\n")
                         }
                     }
+                    this.onSave?.invoke(file.toUri())
                 }
 
             }

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Knots and Crosses</string>
+
+    <string name="protocol">https://</string>
+    <string name="domain">generic-game-service.herokuapp.com</string>
+    <string name="base_path">/Game</string>
+    <string name="poll_game">poll</string>
+    <string name="update_game">update</string>
+    <string name="join_game">join</string>
+    <string name="Game_ID">g7fw</string>
+    <string name="API_key">d7nHIrOU5C</string>
+
+    <string name="TIMEOUT_MS">10000</string>
+    <string name="MAX_RETRIES">5</string>
+
+    <string name="Preference_file">no.uia.ikt205.thgame.PREFERENCE_FILE</string>
+    <string name="Pref_Player">Player</string>
+
+
+    <!-- Game Fragment -->
+    <string name="versus">Versus</string>
+    <string name="share_ID_Text">Game ID</string>
+    <string name="turn_init">Waiting for another player to join</string>
+    <string name="turn_your">Your turn</string>
+    <string name="turn_waiting">waiting on other player</string>
+</resources>
